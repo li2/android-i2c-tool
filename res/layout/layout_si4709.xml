@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp" >
+       
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dp"
+			android:textSize="22px"
+	        android:text="Device ID" />
+
+	    <TextView
+	        android:id="@+id/textViewDeviceID"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+			android:background="@drawable/textview_border"
+			android:gravity="center"
+			android:textSize="20px" />	    
+	   	    	    
+	   	<TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="80dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dp"
+			android:textSize="22px"
+	        android:text="Chip ID" />
+	    
+	    <TextView
+	        android:id="@+id/textViewChipID"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+			android:background="@drawable/textview_border"
+			android:gravity="center"
+			android:textSize="20px" />
+	    	
+	    <TextView
+	        android:id="@+id/TextView3"
+	        android:layout_width="85dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="25dp"
+			android:textSize="22px"
+	        android:text="ENABLE" />
+	
+	    <TextView
+	        android:id="@+id/textViewEnable"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+			android:background="@drawable/textview_border"
+			android:gravity="center"
+			android:textSize="20px" />
+	
+    </LinearLayout>
+
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <Button
+            android:id="@+id/buttonPowerUp"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="220dp"
+            android:text="PowerUp"
+            android:textSize="20px" />
+
+        <Button
+            android:id="@+id/buttonPowerDown"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:text="PowerDown"
+            android:textSize="20px" />
+		    
+    </LinearLayout>
+      
+    
+</LinearLayout>
