@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="256dp"
+    android:padding="4dp" >
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="0.35"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i2c_data_address" />
+
+        <EditText
+            android:id="@+id/dialogDataAddrEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:enabled="true"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:singleLine="true" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_weight="0.35"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/i2c_data_value" />
+
+        <EditText
+            android:id="@+id/dialogDataValueEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="false"
+            android:enabled="true"
+            android:inputType="numberDecimal"
+            android:maxLength="6"
+            android:singleLine="true" />
+    </LinearLayout>
+    
+    <NumberPicker android:id="@+id/dialogModePicker"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="256dp"
+        android:descendantFocusability="blocksDescendants" />
+    
+</LinearLayout>

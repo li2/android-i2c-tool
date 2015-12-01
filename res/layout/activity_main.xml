@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.mitac.android.i2ctool.MainActivity" >
+    
+    <ScrollView
+        android:id="@+id/i2cConsoleScroll"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0" >
+        
+	    <TextView
+	        android:id="@+id/i2cConsoleTv"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="4dp"
+	        android:gravity="left"
+	        android:maxLines="@integer/console_max_lines"
+            android:typeface="monospace" />
+        
+    </ScrollView>
+    
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:orientation="vertical">
+	    
+        <LinearLayout
+            android:id="@+id/i2cLoop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <CheckBox
+                android:id="@+id/i2cLoopCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/i2cLoopIntervalBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/i2cInfoBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i2cLoop" />
+        
+        <Button
+            android:id="@+id/i2cClearBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i2cInfoBtn"
+            android:text="@string/i2c_clean" />
+        
+        <Button
+            android:id="@+id/i2cDumpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:text="@string/i2c_dump" />
+        
+        <Button
+            android:id="@+id/i2cSetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_above="@id/i2cDumpBtn"
+            android:layout_marginBottom="8dp"
+            android:text="@string/i2c_set" />
+        
+        <Button
+            android:id="@+id/i2cDetectBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/i2cSetBtn"
+            android:layout_marginBottom="8dp"
+            android:text="@string/i2c_detect" />        
+        
+</RelativeLayout>
+    
+</LinearLayout>

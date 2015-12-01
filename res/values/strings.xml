@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">i2c-test-tool</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    <string name="app_name">Mitac I2C Tool</string>
+    <string name="hello_world">Hello world</string>
+    <string name="i2c_dump">Dump</string>
+    <string name="i2c_set">Set</string>
+    <string name="i2c_detect">Detect</string>
+    <string name="i2c_clean">Clean</string>
+    <string name="i2c_data_address">Data Address: 0x</string>
+    <string name="i2c_data_value">Value: 0x</string>
+    
 </resources>

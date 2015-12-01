@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <NumberPicker android:id="@+id/dialogBusIdPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:descendantFocusability="blocksDescendants" />
+    
+    <NumberPicker android:id="@+id/dialogAddrHighPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:descendantFocusability="blocksDescendants" />
+    
+    <NumberPicker android:id="@+id/dialogAddrLowPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/dialogAddrHighPicker"
+        android:descendantFocusability="blocksDescendants" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dialogAddrHighPicker"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:text="Addr: 0x"/>
+    
+    <NumberPicker android:id="@+id/dialogModePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:descendantFocusability="blocksDescendants" />
+        
+</RelativeLayout>
