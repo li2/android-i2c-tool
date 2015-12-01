@@ -7,9 +7,9 @@ App可以用于探测Android设备I2C总线、读取/设置I2C设备寄存器值
 
 ### 使用App前需要做的事情
 
-1.需要在Android BSP中编译[开源命令行工具i2c-tools](https://github.com/suapapa/i2c-tools)；
-2.Root Android 机器；
-3.把 i2cdump, i2cset 这两个文件上传到机器的`/system/xbin`路径下，并修改权限为 755;
+1. 需要在Android BSP中编译[开源命令行工具i2c-tools](https://github.com/suapapa/i2c-tools)；
+2. Root Android 机器；
+3. 把 i2cdump, i2cset 这两个文件上传到机器的`/system/xbin`路径下，并修改权限为 755;
 
 ```sh
 adb-platform-tools>adb remount
@@ -17,12 +17,13 @@ adb-platform-tools>adb push i2cdump /system/xbin
 adb-platform-tools>adb push i2cset /system/xbin
 adb-platform-tools>adb shell chmod 755 /system/xbin/i2c*
 ```
-4.如果遇到错误
+4. 如果遇到错误
 
 ```sh
 Error: Could not open file `/dev/i2c-2': Permission denied, Run as root?
 ```
 需要修改Android I2C设备文件的权限：`root@android:/ # chmod 666 /dev/i2c*`
+
 
 ![i2c-command-line-tools](https://github.com/li2/Android_I2C_Tool/blob/master/assets/i2c-command-line-tools.png)
 
@@ -30,7 +31,7 @@ Error: Could not open file `/dev/i2c-2': Permission denied, Run as root?
 ### Detect: 探测I2C设备
 
 探测 Android 设备支持的 I2C 总线及设备。
-![i2c-detect](https://github.com/li2/Android_I2C_Tool/blob/master/assets/i2c-detect.png)
+![i2c-detect](https://github.com/li2/Android_I2C_Tool/blob/master/assets/detect.png)
 
 
 ### Dump: 读取指定 I2C 设备的所有寄存器
@@ -60,12 +61,12 @@ Error: Could not open file `/dev/i2c-2': Permission denied, Run as root?
     00 00 00 00 00 00 00 00 XX XX 95 ff 3f 10 12 0c
 14:55:00 - 
 ```
-![i2c-dump](https://github.com/li2/Android_I2C_Tool/blob/master/assets/i2c-dump.png)
+![i2c-dump](https://github.com/li2/Android_I2C_Tool/blob/master/assets/dump.png)
 
 
 ### Set: 向指定I2C设备的某个寄存器写入数据
 
-![i2c-set](https://github.com/li2/Android_I2C_Tool/blob/master/assets/i2c-set.png)
+![i2c-set](https://github.com/li2/Android_I2C_Tool/blob/master/assets/set.png)
 
 
 ## 关于
